@@ -1,0 +1,438 @@
+/*-------------------RESETS-------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+/*-------------------Animação do banner-------------------*/
+@keyframes muda {
+    40% {
+        background: url('../assets/penhasco.jpg')no-repeat;
+        position: relative;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        transform: scale(1);
+    }
+
+    80% {
+        background: url('../assets/maos.jpg')no-repeat;
+        position: relative;
+        background-size: cover;
+        background-attachment: fixed;
+        /* background-position: center; */
+        transform: scale(1);
+    }
+}
+
+/*---------------------Header---------------------*/
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #191c03;
+    margin-bottom: 8px;
+}
+
+header p {
+    margin-left: 25px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+
+header ul li {
+    margin-right: 30px;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+header ul li:last-child {
+    margin-right: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #191c03;
+}
+
+.busca {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.busca input {
+    font-size: 1.2rem;
+    padding: 8px;
+    border: 1px solid #c3c63b;
+    border-radius: 4px 0 0 4px;
+}
+
+.busca button {
+    padding: 10px 18px;
+    border: none;
+    background: #191c03;
+    color: #c3c63b;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/*---------------Animação do menu----------------*/
+header ul li::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #191c03;
+    transition: all .6s ease;
+    opacity: 0;
+}
+
+header ul li:hover::before {
+    width: 100%;
+    opacity: 1;
+}
+
+@media(max-width:965px) {
+    header {
+        flex-direction: column;
+    }
+
+    header ul li {
+        font-size: 1.3rem;
+    }
+
+    header h1 {
+        margin-bottom: 15px;
+    }
+
+    header p {
+        margin-bottom: 25px;
+    }
+
+    header .busca {
+        justify-content: center;
+    }
+}
+
+@media(max-width:670px) {
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header p {
+        margin-bottom: 0;
+    }
+
+    header ul li {
+        font-size: 1.3rem;
+        margin: 20px;
+    }
+}
+
+/*-----------------Banner------------------*/
+.banner {
+    animation: muda 30s infinite;
+    background: url('../assets/paisagem.jpg')no-repeat;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transform: scale(1);
+    min-height: 80vh;
+}
+
+.escuro {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #eee;
+    text-shadow: 2px 1px 3px #191c03f8;
+}
+
+.banner h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #eee;
+    text-shadow: 1px 1px 2px #191c03;
+}
+
+.banner .btn {
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background: #191c03;
+    color: #c3c63b;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/*-----------Conheça a Donatel Company--------*/
+.descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.descricao h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #191c03;
+}
+
+.descricao p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #191c03;
+}
+
+.descricao hr {
+    width: 350px;
+    height: 2px;
+    background: #191c03;
+    border: none;
+    margin-bottom: 70px;
+}
+
+.descricao .grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.descricao .grid li {
+    height: 300px;
+    margin: 10px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    transition: .4s ease-in-out;
+}
+
+.descricao .grid li:hover{
+    transform: scale(1.03);
+}
+
+.descricao .grid .pequeno {
+    flex-basis: 35%;
+}
+
+.descricao .grid .grande {
+    flex-basis: 60%;
+}
+
+@media(max-width:970px) {
+
+    .descricao .grid .pequeno,
+    .descricao .grid .grande {
+        flex-basis: 46%;
+        margin: 10px;
+    }
+}
+
+@media(max-width:700px) {
+
+    .descricao .grid .pequeno,
+    .descricao .grid .grande {
+        flex-basis: 100%;
+    }
+}
+
+/*------------------Informações--------------------*/
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 50px;
+    text-align: center;
+    background: #191c03;
+}
+
+.informacoes h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #fff;
+}
+
+.informacoes p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #fff;
+}
+
+.informacoes hr {
+    width: 350px;
+    background: #fff;
+    border: none;
+    height: 2px;
+    margin-bottom: 70px;
+}
+
+.informacoes ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.informacoes i {
+    font-size: 3.5rem;
+    color: #c3c63b;
+}
+
+.informacoes li {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.informacoes li h4 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #c3c63b;
+}
+
+.informacoes li p {
+    color: #ffffff;
+}
+
+@media(max-width:850px) {
+    .informacoes ul {
+        flex-direction: column;
+    }
+}
+
+/*---------------------Cadastro---------------------*/
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.cadastro h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #191c03;
+}
+
+.cadastro p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #191c03;
+}
+
+.cadastro hr {
+    width: 350px;
+    height: 2px;
+    background: #191c03;
+    border: none;
+    margin-bottom: 70px;
+}
+
+.cadastro form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+
+.cadastro form input {
+    padding: 15px;
+    border: 1px solid #c3c63b;
+    border-radius: 4px;
+    color: #191c03;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    flex: 1;
+}
+
+.cadastro form button {
+    padding: 15px;
+    border: none;
+    background: #191c03;
+    color: #eee;
+    text-shadow: 1px 1px 2px #191c03;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media(max-width:700px) {
+    .cadastro form input {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/*----------------------Rodapé----------------------*/
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #191c03;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    color: #c3c63b;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+footer li {
+    margin-right: 40px;
+}
+
+footer li:last-child {
+    margin-right: 0;
+}
+
+footer li a {
+    color: #c3c63b;
+    font-size: 2rem;
+}
+
+footer p {
+    text-align: center;
+}
