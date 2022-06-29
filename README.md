@@ -25,7 +25,7 @@ Esta **Lading-Page** é um *projecto* que foi criado para exercitar as minhas ha
 * Animate.css
 
 ### Implantação do Projecto
-- **Vercel**
+- **Vercel** : https://lading-page-xi.vercel.app/
 
 ### Autor
 ***
