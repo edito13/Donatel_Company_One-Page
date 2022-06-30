@@ -1,7 +1,7 @@
-# Lading-Page
+# Donatel Company One-Page
 
 ## Sobre o Projecto
-Esta **Lading-Page** é um *projecto* que foi criado para exercitar as minhas habilidades no **Front-End** focando mais em **FlexBox**, seguindo as directrizes e ensinamentos do curso de FlexBox da **_NodeStudio_**, e acho que ficou perfeita mesmo acrescendo ou alterando coisas.
+Esta **One-Page** é um *projecto* que foi criado para exercitar as minhas habilidades no **Front-End** focando mais em **FlexBox**, seguindo as directrizes e ensinamentos do curso de FlexBox da **_NodeStudio_**, e acho que ficou perfeita mesmo acrescendo ou alterando coisas.
 
 <img src='./assets/Captura de Ecrã (272).png'>
 
