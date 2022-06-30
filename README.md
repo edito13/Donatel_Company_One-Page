@@ -31,7 +31,7 @@ Esta **One-Page** é um *projecto* que foi criado para exercitar as minhas habil
 ***
 
 <figure>
-    <img src='./Editoh13.jpg' style='border-radius: 50%' width='100' height='110'>
+    <img src='https://github.com/edito13/Biz_Ezone/blob/master/Editoh13.jpg' style='border-radius: 50%' width='100' height='110'>
     <figcaption>Edito Tchokoso</figcaption>
 </figure>
 
